@@ -58,6 +58,13 @@
                  * # *
                  # * # *
                 
+                * # * # *
+                # * # *
+                * # *
+                # *
+                *
+
+                
 
             */
 
@@ -148,6 +155,48 @@
                     //     }
                     //     document.write("<br>");
                     // }
+
+
+                    // for(var i=5; i>=1; i--){
+                    //     for(var j=1; j<=i; j++){
+                    //         if((i+j)%2==0){
+                    //             document.write("* ");
+                    //         }else{
+                    //             document.write("# ");
+                    //         }
+                    //     }
+                    //     document.write("<br>");
+                    // }
+
+
+                    //diamond...
+                        var row = 5; 
+                        for(var i=1; i<=row; i++){
+                            for(var j=1; j<=row-i; j++){
+                                document.write(" &nbsp");
+                            }
+                            for(var k=1; k<=i; k++){
+                                document.write("* ");
+                            }
+                            document.write("<br>");
+                        }
+
+                        for(var i=row-1; i>=1; i--){
+                            for(var j=1; j<=row-i; j++){
+                                document.write("&nbsp");
+                            }
+                            for(var k=1; k<=i; k++){
+                                document.write("* ");
+
+                            }
+                            document.write("<br>");
+                        }                 
+
+
+
+
+
+
     </script>
 </body>
 </html>
