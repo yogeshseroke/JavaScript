@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Click Me!</button>
+
+    <p id="demo"></p>
+
+    <!-- <p id="d1">
+
+
+    </p> -->
+    
+    <script>
+
+        // let myFunction = (a, b) => a * b;
+        // document.getElementById("demo").innerHTML = myFunction(12,12);
+        //let abc = (12, 23) => 12*23;
+
+        // hello = (a, b) => a + b;
+        // document.getElementById("demo").innerHTML = hello(2,6);
+
+        // function fun(a,b){
+        //     return a+b;
+
+            
+        // }
+            
+            //chalo = (a) => "Hello " + a;
+            // chalo = a => "Hello " + a;
+            // document.getElementById("d1").innerHTML = chalo("world");
+ 
+
+
+    </script>
+<script>
+    let hello = "";
+    
+    hello = function() {
+      document.getElementById("demo").innerHTML += this;
+    }
+    
+    //The window object calls the function:
+    window.addEventListener("load", hello);
+    
+    //A button object calls the function:
+    document.getElementById("btn").addEventListener("click", hello);
+    </script>
+
+</body>
+</html>
